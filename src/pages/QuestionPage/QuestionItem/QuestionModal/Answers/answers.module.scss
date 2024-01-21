@@ -1,0 +1,19 @@
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.selectAnswers {
+
+}
+
+.rangeAnswers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    span {
+        font-weight: 500;
+    }
+}

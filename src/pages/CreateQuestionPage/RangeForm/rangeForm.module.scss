@@ -1,0 +1,30 @@
+.form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+.input {
+  width: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.items {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column
+}
+.variants_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

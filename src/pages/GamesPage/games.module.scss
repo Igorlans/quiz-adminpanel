@@ -1,0 +1,112 @@
+.games {
+  background: #fff;
+  padding: 80px 20px;
+  height: 100%;
+
+  .games_body {
+    background: #f8f8ff;
+    min-height: 500px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    .title {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .games_list {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 125px );
+      gap: 25px;
+      .game_item {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        transition: 0.15s transform linear;
+        &:hover {
+          transform: scale(1.07);
+        }
+        .image {
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          border-radius: 10px;
+          overflow: hidden;
+          width: 125px;
+          height: 125px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .create {
+            span {
+
+            }
+          }
+        }
+        .title {
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+      }
+      .game_item_present {
+        position: relative;
+        .premium {
+          z-index: 500;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+        .image {
+          position: relative;
+          .backdrop {
+            position: absolute;
+            z-index: 1000;
+            font-size: 14px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: #050505;
+            opacity: 0;
+            transition: opacity 0.15s linear;
+          }
+          .text {
+            position: absolute;
+            color: #fff;
+            z-index: 2000;
+            font-size: 12px;
+            padding: 0 10px;
+            text-align: center;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: opacity 0.15s linear;
+          }
+          &:hover {
+            .backdrop {
+              opacity: 0.6;
+            }
+            .text {
+              opacity: 1;
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.questionItem {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgb(0, 0, 0, 0.12);
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .type {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 18px;
+        flex: 1;
+    }
+
+    .info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            line-height: 1;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+}
